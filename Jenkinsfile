@@ -4,8 +4,8 @@ pipeline {
         maven 'Maven'
     }
     environment {
-        repositoryName = "lovyparhar/java-calculator-devops",
-        tag = "1.0",
+        repositoryName = "lovyparhar/java-calculator-devops"
+        tag = "1.0"
         image = ""
     }
     stages {
