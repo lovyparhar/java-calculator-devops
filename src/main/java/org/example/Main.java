@@ -22,20 +22,42 @@ public class Main {
                 break;
             }
             else if(choice == 1) {
+                System.out.println("Input number: ");
+                double num = scanner.nextDouble();
 
+                System.out.println("Square root of this number is: ");
+                System.out.println(calculator.squareRoot(num));
             }
             else if(choice == 2) {
+                System.out.println("Input number: ");
+                double num = scanner.nextDouble();
 
+                System.out.println("Factorial of this number is: ");
+                System.out.println(calculator.factorial(num));
             }
             else if(choice == 3) {
+                System.out.println("Input number: ");
+                double num = scanner.nextDouble();
 
+                System.out.println("Natural log of this number is: ");
+                System.out.println(calculator.naturalLog(num));
             }
             else if(choice == 4) {
 
+                System.out.println("Input the base: ");
+                double base = scanner.nextDouble();
+
+                System.out.println("Input the exponent: ");
+                double exponent = scanner.nextDouble();
+
+                System.out.println("Base raised to power exponent is: ");
+                System.out.println(calculator.power(base, exponent));
             }
             else {
-                System.out.println("Please give a valid choice\n");
+                System.out.println("Please give a valid choice");
             }
+
+            System.out.println("");
         } while(true);
     }
 }
