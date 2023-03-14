@@ -32,10 +32,12 @@ pipeline {
             }
         }
         stage('Dockerhub image push') {
-            script{
-                // By default, the registry will be dockerhub
-                docker.withRegistry('', 'dockerhub-credentials'){
-                    image.push()
+            steps {
+                script{
+                    // By default, the registry will be dockerhub
+                    docker.withRegistry('', 'dockerhub-credentials'){
+                        image.push()
+                    }
                 }
             }
         }
