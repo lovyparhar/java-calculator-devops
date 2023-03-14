@@ -3,6 +3,11 @@ pipeline {
     tools {
         maven 'Maven'
     }
+    environment {
+        repositoryName = "lovyparhar/java-calculator-devops",
+        tag = "1.0",
+        image = ""
+    }
     stages {
         stage('Fetch code from github') {
             steps {
@@ -18,7 +23,21 @@ pipeline {
                     sh 'mvn clean install'
                 }
             }
-
+        }
+        stage('Docker image creation') {
+            steps {
+                script{
+                    image = docker.build(repositoryName + ":" + tag)
+                }
+            }
+        }
+        stage('Dockerhub image push') {
+            script{
+                // By default, the registry will be dockerhub
+                docker.withRegistry('', 'dockerhub-credentials'){
+                    image.push()
+                }
+            }
         }
     }
 }
