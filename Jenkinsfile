@@ -41,5 +41,10 @@ pipeline {
                 }
             }
         }
+        stage('Pulling docker image') {
+            steps {
+              ansiblePlaybook credentialsId: 'jenkins-ansible', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'hosts', playbook: 'deploy-playbook.yml'
+            }
+        }
     }
 }
