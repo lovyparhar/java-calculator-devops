@@ -15,11 +15,13 @@ public class CalculatorTest {
     @Test
     public void testSquareRoot() {
         Assert.assertEquals("Square root test", 2, calculator.squareRoot(4), EPSILON);
+        Assert.assertNotEquals("Square root test", 1, calculator.squareRoot(4), EPSILON);
     }
 
     @Test
     public void testFactorial() {
         Assert.assertEquals("Factorial test", 24, calculator.factorial(4), EPSILON);
+        Assert.assertNotEquals("Factorial test", 24, calculator.factorial(3), EPSILON);
     }
 
     @Test
