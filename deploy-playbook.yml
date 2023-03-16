@@ -1,12 +1,19 @@
 ---
+#- name: Pull image from dockerhub
+#  hosts: jenkins
+#  tasks:
+#    - name: Install pip requests library
+#      pip:
+#        name: requests
+#        state: present
+#
+#    - name: Pull calculator image
+#      docker_image:
+#        name: lovyparhar/java-calculator-devops:1.0
+#        source: pull
 - name: Pull image from dockerhub
-  hosts: jenkins
+  hosts: server
   tasks:
-    - name: Install pip requests library
-      pip:
-        name: requests
-        state: present
-
     - name: Pull calculator image
       docker_image:
         name: lovyparhar/java-calculator-devops:1.0
