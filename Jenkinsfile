@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
         repositoryName = "lovyparhar/java-calculator-devops"
-        tag = "1.0"
+        tag = "latest"
         image = ""
     }
     stages {

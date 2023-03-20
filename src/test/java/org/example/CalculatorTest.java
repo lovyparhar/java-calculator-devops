@@ -1,11 +1,14 @@
 package org.example;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.*;
 
 public class CalculatorTest {
 
     private Calculator calculator;
     private static final double EPSILON = 1e-10;
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     @Before
     public void setUpCalculator() {
@@ -37,5 +40,6 @@ public class CalculatorTest {
     @After
     public void tearDown() {
         calculator = null;
+        logger.info("Testing is over");
     }
 }

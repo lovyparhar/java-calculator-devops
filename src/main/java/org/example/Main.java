@@ -1,8 +1,13 @@
 package org.example;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Welcome to the Calculator App!\n");
@@ -19,6 +24,7 @@ public class Main {
             int choice = scanner.nextInt();
 
             if(choice == 0) {
+                logger.info("Exiting the application");
                 break;
             }
             else if(choice == 1) {
@@ -54,6 +60,7 @@ public class Main {
                 System.out.println(calculator.power(base, exponent));
             }
             else {
+                logger.info("Invalid option choice");
                 System.out.println("Please give a valid choice");
             }
 

@@ -1,0 +1,1 @@
+docker exec -it calculator java -jar java-calculator-devops-1.0-SNAPSHOT-jar-with-dependencies.jar
