@@ -19,8 +19,14 @@
         name: docker
         state: started
 
+    - name: Copy the script for interacting with application
+      copy: src=runApp.sh dest=/home/ubuntu-server
+
+    - name: Copy the script for getting logs
+      copy: src=sendLogs.sh dest=/home/ubuntu-server
+
     - name: Stop and remove the current container
-      shell: docker ps -aq | xargs docker stop | xargs docker rm
+      script: ./clearScript.sh
 
     - name: Pull calculator image
       docker_image:
