@@ -1,6 +1,0 @@
-2023-03-20 04:31:16.214 [main] INFO  org.example.Calculator - Called squareRoot function with argument: 2.0
-2023-03-20 04:31:16.217 [main] INFO  org.example.Calculator - Returned value from squareRoot function: 1.4142135623730951
-2023-03-20 04:31:22.643 [main] INFO  org.example.Calculator - Called naturalLog function with argument: 1.0
-2023-03-20 04:31:22.644 [main] INFO  org.example.Calculator - Returned value from naturalLog function: 0.0
-2023-03-20 04:31:24.086 [main] INFO  org.example.Main - Exiting the application
-2023-03-20 04:38:07.305 [main] INFO  org.example.Main - Exiting the application
