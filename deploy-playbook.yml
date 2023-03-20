@@ -25,13 +25,14 @@
     - name: Copy the script for getting logs
       copy: src=sendLogs.sh dest=/home/ubuntu-server
 
-    - name: Stop and remove the current container
+    - name: Stop and remove the current container and delete all images
       script: ./clearScript.sh
 
     - name: Pull calculator image
       docker_image:
         name: lovyparhar/java-calculator-devops:latest
         source: pull
+        force_source: yes
 
     - name: Run the new docker container
       shell: docker run -d -it --name calculator lovyparhar/java-calculator-devops:latest
