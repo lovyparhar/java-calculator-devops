@@ -14,3 +14,22 @@
 2023-03-20 11:20:15.881 [main] INFO  org.example.Calculator - Called squareRoot function with argument: 4.0
 2023-03-20 11:20:15.881 [main] INFO  org.example.Calculator - Returned value from squareRoot function: 2.0
 2023-03-20 11:20:15.881 [main] INFO  org.example.Calculator - Testing is over
+2023-03-20 18:01:50.750 [main] INFO  org.example.Calculator - Called power function with arguments: 2.0 and 3.0
+2023-03-20 18:01:50.753 [main] INFO  org.example.Calculator - Returned value from power function: 8.0
+2023-03-20 18:01:50.753 [main] INFO  org.example.Calculator - Testing is over
+2023-03-20 18:01:50.754 [main] INFO  org.example.Calculator - Called factorial function with argument: 4.0
+2023-03-20 18:01:50.755 [main] INFO  org.example.Calculator - Returned value from factorial function: 24.0
+2023-03-20 18:01:50.755 [main] INFO  org.example.Calculator - Called factorial function with argument: 3.0
+2023-03-20 18:01:50.755 [main] INFO  org.example.Calculator - Returned value from factorial function: 6.0
+2023-03-20 18:01:50.755 [main] INFO  org.example.Calculator - Testing is over
+2023-03-20 18:01:50.755 [main] INFO  org.example.Calculator - Called naturalLog function with argument: 14.0
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Returned value from naturalLog function: 2.6390573296152584
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Testing is over
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Called squareRoot function with argument: 4.0
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Returned value from squareRoot function: 2.0
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Called squareRoot function with argument: 4.0
+2023-03-20 18:01:50.756 [main] INFO  org.example.Calculator - Returned value from squareRoot function: 2.0
+2023-03-20 18:01:50.757 [main] INFO  org.example.Calculator - Testing is over
+2023-03-20 18:02:28.596 [main] INFO  org.example.Calculator - Called squareRoot function with argument: 5.0
+2023-03-20 18:02:28.599 [main] INFO  org.example.Calculator - Returned value from squareRoot function: 2.23606797749979
+2023-03-20 18:02:32.386 [main] INFO  org.example.Main - Exiting the application
