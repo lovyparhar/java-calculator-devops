@@ -8,7 +8,7 @@ public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
 
     public double squareRoot(double num) {
-        logger.info("Called squareRoot function with argument: " + num);
+        logger.info("Called square root function with argument: " + num);
         double ans = Math.sqrt(num);
         logger.info("Returned value from squareRoot function: " + ans);
         return ans;
@@ -25,7 +25,7 @@ public class Calculator {
     }
 
     public double naturalLog(double num) {
-        logger.info("Called naturalLog function with argument: " + num);
+        logger.info("Called natural log function with argument: " + num);
         double ans = Math.log(num);
         logger.info("Returned value from naturalLog function: " + ans);
         return ans;
