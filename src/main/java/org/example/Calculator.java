@@ -32,7 +32,7 @@ public class Calculator {
     }
 
     public double power(double base, double exp) {
-        logger.info("Called power function with arguments: " + base + " and " + exp);
+        logger.info("Called the power function with arguments: " + base + " and " + exp);
         double ans = Math.pow(base, exp);
         logger.info("Returned value from power function: " + ans);
         return ans;
